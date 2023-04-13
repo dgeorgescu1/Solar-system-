@@ -263,7 +263,7 @@ def main():
         #Appends system energies to lists
         kinetic_energies.append(Particle3D.sys_kinetic(p_list))
         potential_energies.append(potential_new/2)
-        Total_energies.append(potential_energy/2 + Particle3D.sys_kinetic(p_list))  
+        Total_energies.append(potential_new/2 + Particle3D.sys_kinetic(p_list))  
         
     #Plots three energy graphs as indicated by the titles
     plt.plot(time_list, kinetic_energies)
